@@ -10,5 +10,8 @@
     "joi": "^17.9.1",
     "twilio": "^4.9.0",
     "xrpl": "^2.7.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
