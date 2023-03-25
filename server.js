@@ -1,4 +1,4 @@
-const { sendXrp } = require("./utils/send-money");
+// const { sendXrp } = require("./utils/send-money");
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -16,14 +16,14 @@ app.post('/convert-xrp', async (req, res) => {
     };
     const amount = req.body.amount, address = req.body.address, phone = req.body.phone,
     message = req.body.message;
-    const data = await sendXrp({amount, address});
-    if(!data) return res.status(500).send({message: "Please check your address or amount and try again"});
+   // const data = await sendXrp({amount, address});
+   // if(!data) return res.status(500).send({message: "Please check your address or amount and try again"});
     try{
       await sendSMS({body: message, to: phone});
     }catch(e){
       console.log('could not send message', e?.message);
     }
-    return res.send(data);
+    return res.send({message: "success", status: 200});
   } catch (err) {
     console.error(err);
     res.status(500).send('An error occurred: ' + JSON.stringify(err?.message));
