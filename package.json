@@ -15,7 +15,15 @@
   "scripts": {
     "start": "node server.js"
   },
-  "engines": {
-    "node": ">=14"
-  }
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbertmpanga12/xrp-wallet.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/gilbertmpanga12/xrp-wallet/issues"
+  },
+  "homepage": "https://github.com/gilbertmpanga12/xrp-wallet#readme",
+  "description": ""
 }
