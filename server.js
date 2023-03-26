@@ -16,8 +16,8 @@ app.post('/convert-xrp', async (req, res) => {
     };
     const amount = req.body.amount, address = req.body.address, phone = req.body.phone,
     message = req.body.message;
-   // const data = await sendXrp({amount, address});
-   // if(!data) return res.status(500).send({message: "Please check your address or amount and try again"});
+   const data = await sendXrp({amount, address});
+   if(!data) return res.status(500).send({message: "Please check your address or amount and try again"});
     try{
       await sendSMS({body: message, to: phone});
     }catch(e){
