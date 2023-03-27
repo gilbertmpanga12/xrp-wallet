@@ -12,7 +12,6 @@ XRP. XRPL, and vice versa unlocking a new world of possibilities
     "amount": "1",
     "address": "rPT1Sjq2YGrBMTttX4GZHjKu9dyfzbpAYe",
     "phone": "+256785442776",
-    "message": "You have won 10 xrp"
-}
+    "message": "You have won 10 xrp"}
   ```
 
